@@ -1,4 +1,4 @@
-# test flow chart
+# TEST FLOW CHART
 
 ## Introduction
 ---

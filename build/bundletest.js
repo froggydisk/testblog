@@ -2,11 +2,11 @@ import cytoscape from 'cytoscape';
 let dagre = require('cytoscape-dagre');
 
 cytoscape.use( dagre ); 
-import './style.css';
-import '../model/data.json';
+import 'style.css';
+import './model/data.json';
 // webpack으로 묶어줘야 하니 css파일을 진입점인 index.js 에 import 합니다
 
-fetch('../model/data.json', { mode: 'no-cors' })
+fetch('./model/data.json', { mode: 'no-cors' })
     .then(function (res) {
         return res.json();
     })

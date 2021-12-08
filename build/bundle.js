@@ -17397,7 +17397,9 @@ fetch('../model/data.json', {
       rankDir: 'BT',
       animate: false,
       fit: true
-    }
+    },
+    minZoom: 1,
+    maxZoom: 4
   });
   cy.on('tap', function (e) {
     const url = e.target.data('url');

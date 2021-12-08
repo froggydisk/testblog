@@ -79,13 +79,16 @@ fetch('../model/data.json', { mode: 'no-cors' })
                     }
                 }
             ],
-        
+
             layout: {
                 name: 'dagre',
                 rankDir: 'BT',
                 animate: false,
                 fit: true,
-            }
+            },
+
+            minZoom: 1,
+            maxZoom: 4,
         
         });
         

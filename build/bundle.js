@@ -17325,7 +17325,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _model_data_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(297);
 
 
-var dagre = __webpack_require__(5);
+let dagre = __webpack_require__(5);
 
 cytoscape__WEBPACK_IMPORTED_MODULE_0___default().use(dagre);
 
@@ -17336,27 +17336,27 @@ fetch('../model/data.json', {
 }).then(function (res) {
   return res.json();
 }).then(function (data) {
-  var cy_for_rank = cytoscape__WEBPACK_IMPORTED_MODULE_0___default()({
+  const cy_for_rank = cytoscape__WEBPACK_IMPORTED_MODULE_0___default()({
     elements: data
   }); // rank를 활용하기 위해 data만 입력한 cytoscape 객체입니다
 
-  var pageRank = cy_for_rank.elements().pageRank(); // elements들의 rank들입니다.
+  const pageRank = cy_for_rank.elements().pageRank(); // elements들의 rank들입니다.
 
-  var nodeMaxSize = 30;
-  var nodeMinSize = 5;
-  var fontMaxSize = 8;
-  var fontMinSize = 5; // node & font 크기 값
+  const nodeMaxSize = 30;
+  const nodeMinSize = 5;
+  const fontMaxSize = 8;
+  const fontMinSize = 5; // node & font 크기 값
 
-  var edgeWidth = '2px';
-  var arrowScale = 0.8; // edge & arrow 크기값
+  const edgeWidth = '2px';
+  const arrowScale = 0.8; // edge & arrow 크기값
 
-  var dimColor = '#dfe4ea';
-  var edgeColor = '#ced6e0';
-  var nodeColor = '#696969';
-  var nodeActiveColor = '#0067A3';
-  var successorColor = '#0E0C32'; // 상위 node & edge color
+  const dimColor = '#dfe4ea';
+  const edgeColor = '#ced6e0';
+  const nodeColor = '#696969';
+  const nodeActiveColor = '#0067A3';
+  const successorColor = '#0E0C32'; // 상위 node & edge color
 
-  var predecessorsColor = '#7690AC'; // 하위 node & edge color
+  const predecessorsColor = '#7690AC'; // 하위 node & edge color
   // 아래는 공식 사이트에 올라와 있는 예제 코드입니다
 
   var cy = cytoscape__WEBPACK_IMPORTED_MODULE_0___default()({
@@ -17369,13 +17369,13 @@ fetch('../model/data.json', {
       style: {
         'background-color': nodeColor,
         'label': 'data(id)',
-        'width': function width(ele) {
+        'width': function (ele) {
           return nodeMaxSize * pageRank.rank('#' + ele.id()) + nodeMinSize;
         },
-        'height': function height(ele) {
+        'height': function (ele) {
           return nodeMaxSize * pageRank.rank('#' + ele.id()) + nodeMinSize;
         },
-        'font-size': function fontSize(ele) {
+        'font-size': function (ele) {
           return fontMaxSize * pageRank.rank('#' + ele.id()) + fontMinSize;
         },
         'color': nodeColor // 'shape': 'round-rectangle'
@@ -17402,7 +17402,7 @@ fetch('../model/data.json', {
     maxZoom: 4
   });
   cy.on('tap', function (e) {
-    var url = e.target.data('url');
+    const url = e.target.data('url');
 
     if (url && url !== '') {
       window.open(url);
@@ -17420,7 +17420,7 @@ fetch('../model/data.json', {
   cy.on('tapend mouseout', 'node', function (e) {
     setResetFocus(e.cy);
   });
-  var resizeTimer;
+  let resizeTimer;
   window.addEventListener('resize', function () {
     this.clearTimeout(resizeTimer);
     resizeTimer = this.setTimeout(function () {

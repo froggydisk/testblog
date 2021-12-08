@@ -103,22 +103,22 @@
     },
     {
         "data": {
-            "id": "PJ-sasGems",
+            "id": "OnApp",
             "url": "https://docs.google.com/presentation/d/13Uv-GDmkdGpw2LWPZBMo1XxPuitafX5DZrMSPOByvn4/edit#slide=id.p",
             "label": "Samsung SAS G-EMS project\n(18.07 ~ 19.02)"
         }
     },
     {
         "data": {
-            "id": "ETC-sasGems",
+            "id": "HomeScreen",
             "label": "ETC"
         }
     },
     {
         "data": {
-            "id": "PJ-sasGems->ETC-sasGems",
-            "source": "ETC-sasGems",
-            "target": "PJ-sasGems"
+            "id": "OnApp->HomeScreen",
+            "source": "HomeScreen",
+            "target": "OnApp"
         }
     },
     {
@@ -130,9 +130,9 @@
     },
     {
         "data": {
-            "id": "ETC-sasGems->ETC-sasGems-eclipse",
+            "id": "HomeScreen->ETC-sasGems-eclipse",
             "source": "ETC-sasGems-eclipse",
-            "target": "ETC-sasGems"
+            "target": "HomeScreen"
         }
     },
     {
@@ -144,9 +144,9 @@
     },
     {
         "data": {
-            "id": "ETC-sasGems->ETC-sasGems-toad",
+            "id": "HomeScreen->ETC-sasGems-toad",
             "source": "ETC-sasGems-toad",
-            "target": "ETC-sasGems"
+            "target": "HomeScreen"
         }
     },
     {
@@ -158,22 +158,22 @@
     },
     {
         "data": {
-            "id": "ETC-sasGems->ETC-sasGems-svn",
+            "id": "HomeScreen->ETC-sasGems-svn",
             "source": "ETC-sasGems-svn",
-            "target": "ETC-sasGems"
+            "target": "HomeScreen"
         }
     },
     {
         "data": {
-            "id": "BE-sasGems",
+            "id": "InHall",
             "label": "Back-End"
         }
     },
     {
         "data": {
-            "id": "PJ-sasGems->BE-sasGems",
-            "source": "BE-sasGems",
-            "target": "PJ-sasGems"
+            "id": "OnApp->InHall",
+            "source": "InHall",
+            "target": "OnApp"
         }
     },
     {
@@ -185,9 +185,9 @@
     },
     {
         "data": {
-            "id": "BE-sasGems->SKILL-sasGems-spring",
+            "id": "InHall->SKILL-sasGems-spring",
             "source": "SKILL-sasGems-spring",
-            "target": "BE-sasGems"
+            "target": "InHall"
         }
     },
     {
@@ -290,15 +290,15 @@
     },
     {
         "data": {
-            "id": "FE-sasGems",
+            "id": "ProfileScreen",
             "label": "Front-End"
         }
     },
     {
         "data": {
-            "id": "PJ-sasGems->FE-sasGems",
-            "source": "FE-sasGems",
-            "target": "PJ-sasGems"
+            "id": "OnApp->ProfileScreen",
+            "source": "ProfileScreen",
+            "target": "OnApp"
         }
     },
     {
@@ -310,9 +310,9 @@
     },
     {
         "data": {
-            "id": "FE-sasGems->SKILL-sasGems-html",
+            "id": "ProfileScreen->SKILL-sasGems-html",
             "source": "SKILL-sasGems-html",
-            "target": "FE-sasGems"
+            "target": "ProfileScreen"
         }
     },
     {
@@ -324,9 +324,9 @@
     },
     {
         "data": {
-            "id": "FE-sasGems->SKILL-sasGems-css",
+            "id": "ProfileScreen->SKILL-sasGems-css",
             "source": "SKILL-sasGems-css",
-            "target": "FE-sasGems"
+            "target": "ProfileScreen"
         }
     },
     {
@@ -338,9 +338,9 @@
     },
     {
         "data": {
-            "id": "FE-sasGems->SKILL-sasGems-jQuery",
+            "id": "ProfileScreen->SKILL-sasGems-jQuery",
             "source": "SKILL-sasGems-jQuery",
-            "target": "FE-sasGems"
+            "target": "ProfileScreen"
         }
     },
     {
@@ -380,9 +380,9 @@
     },
     {
         "data": {
-            "id": "FE-sasGems->SKILL-sasGems-jsp",
+            "id": "ProfileScreen->SKILL-sasGems-jsp",
             "source": "SKILL-sasGems-jsp",
-            "target": "FE-sasGems"
+            "target": "ProfileScreen"
         }
     },
     {

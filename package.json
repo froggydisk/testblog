@@ -28,5 +28,13 @@
   "devDependencies": {
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/froggydisk/testflow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/froggydisk/testflow/issues"
+  },
+  "homepage": "https://github.com/froggydisk/testflow#readme"
 }

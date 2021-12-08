@@ -32,12 +32,12 @@ fetch('../model/data.json', { mode: 'no-cors' })
         
         const dimColor = '#dfe4ea';
         const edgeColor = '#ced6e0';
-        const nodeColor = '#576f6d';
-        const nodeActiveColor = '#339900';
+        const nodeColor = '#696969';
+        const nodeActiveColor = '#0067A3';
         
-        const successorColor = '#cbbeb5';
+        const successorColor = '#0E0C32';
         // 상위 node & edge color
-        const predecessorsColor = '#cbbeb5';
+        const predecessorsColor = '#7690AC';
         // 하위 node & edge color
         
         // 아래는 공식 사이트에 올라와 있는 예제 코드입니다
@@ -63,7 +63,7 @@ fetch('../model/data.json', { mode: 'no-cors' })
                             return fontMaxSize *   pageRank.rank('#' + ele.id()) + fontMinSize;
                         },
                         'color': nodeColor,
-                        'shape': 'round-rectangle'
+                        // 'shape': 'round-rectangle'
                     }
                 },
         

@@ -17352,11 +17352,11 @@ fetch('../model/data.json', {
 
   const dimColor = '#dfe4ea';
   const edgeColor = '#ced6e0';
-  const nodeColor = '#576f6d';
-  const nodeActiveColor = '#339900';
-  const successorColor = '#cbbeb5'; // 상위 node & edge color
+  const nodeColor = '#696969';
+  const nodeActiveColor = '#0067A3';
+  const successorColor = '#0E0C32'; // 상위 node & edge color
 
-  const predecessorsColor = '#cbbeb5'; // 하위 node & edge color
+  const predecessorsColor = '#7690AC'; // 하위 node & edge color
   // 아래는 공식 사이트에 올라와 있는 예제 코드입니다
 
   var cy = cytoscape__WEBPACK_IMPORTED_MODULE_0___default()({
@@ -17378,8 +17378,8 @@ fetch('../model/data.json', {
         'font-size': function (ele) {
           return fontMaxSize * pageRank.rank('#' + ele.id()) + fontMinSize;
         },
-        'color': nodeColor,
-        'shape': 'round-rectangle'
+        'color': nodeColor // 'shape': 'round-rectangle'
+
       }
     }, {
       selector: 'edge',
